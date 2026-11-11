@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harjutus 2: lennuliinide ja reisijate prognoos</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap"><a class="brand" href="index.html">Copiloti praktilised harjutused</a></div></header>
+<main class="wrap">
+<p class="crumb"><a href="index.html">← Kõik harjutused</a></p>
+<h1>Harjutus 2: lennuliinide ja reisijate prognoos</h1>
+<p class="meta">Kaust: Lennuliinide prognoosi näidiskaust · ~75 min · sobib: liiklusanalüüs, prognoosid, liinide arendus</p>
+<article class="guide">
+<h2>Taust</h2>
+<p>Liinide arenduse osakond koostab juhatusele reisijate prognoosi novembrist 2026 detsembrini 2027. Kaustas on kuuandmed 2017–2026, 19 liini statistika, oktoobri toores AODB eksport (CSV), talvine lennuplaan, makronäitajad, möödunud aasta eelarveprognoos ning sihtkohtade raportid ja lennufirmadega kohtumiste memod. Andmetes võib olla vigu.</p>
+<h2>Ettevalmistus</h2>
+<ul>
+<li>Veendu, et kaust „Lennuliinide prognoosi näidiskaust“ on kopeeritud SINU OneDrive&#x27;i.</li>
+<li>Põhimõtteliselt saab kõik ülesanded teha Copilot Chatiga, kuid testiks võib kasutada ka OneDrive Copilotit või Exceli Copilotit. </li>
+</ul>
+<h2>Ülesanded</h2>
+<p class="note">Tee ülesanded soovitud järjekorras. Iga ülesande jaoks alusta uut vestlust. Kopeeri prompt hallist kastist ja kohanda vajadusel.</p>
+<h3 class="task">1. Ajaloo kirjeldus</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> Excel Copilot (avatud Exceli failis) / OneDrive&#x27;i Copilot (ainult failid, meile ei näe) </p>
+<div class="prompt"><pre id="p1">Kirjelda selle kausta andmete põhjal Tallinna lennujaama reisijate arengut 2017–2026: aastane trend, sesoonsus, COVID-i mõju ja taastumine. Too välja kõige tugevamad ja nõrgemad kuud. </pre><button class="copy" type="button" data-target="p1" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">2. Andmevigade leidmine</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> Excel Copilot (avatud Exceli failis) või OneDrive Copilot</p>
+<div class="prompt"><pre id="p2">Kontrolli andmefaile enne prognoosi: puuduvad perioodid, ebaloogilised väärtused, duplikaadid, ebaühtlased nimed, täituvus üle 100%. Esita tabelina: fail, koht, probleem, soovitatav parandus.</pre><button class="copy" type="button" data-target="p2" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">3. Toorandmete teisendamine</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> Excel Copilot (avatud Exceli failis) või OneDrive Copilot</p>
+<div class="prompt"><pre id="p3">Teisenda AODB oktoobri eksport samasse formaati nagu liinide tabel (lennufirma nimi, sihtkoht, riik, segment) ja lisa see liinide tabeli lõppu. Tee eraldi uus faiil ja lisa kataloogi, </pre><button class="copy" type="button" data-target="p3" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">4. Baasprognoos</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> Excel Copilot (avatud Exceli failis) või OneDrive Copilot</p>
+<div class="prompt"><pre id="p4">Koosta reisijate prognoos kuude kaupa nov 2026 – dets 2027. Kasuta sesoonsust ja trendi ning talvise lennuplaani mahu muutusi. Selgita meetodit ja eeldusi. Tee võrdlev joonis varasemate aastatega. Hoia numbrid Exceli valemitena.
+
+Exceliga tehes lisa kõik Exceli failid kataloogist Exceli Copilotile.
+
+Exceli puhul võid lisada Copilotile hiljem ka muid faile: 
+Lisa RAPORT_Sihtkoht_Kesk-Euroopa_umberistumised
+Propmpt: Vaata seda raportit, kas see muudaks midagi prognoosis? 
+
+</pre><button class="copy" type="button" data-target="p4" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">5. Korrigeerimine kvalitatiivse info põhjal</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> OneDrive&#x27;i Copilot (ainult failid, meile ei näe)</p>
+<div class="prompt"><pre id="p5">Loe läbi raportid ja memod. Millised neist muudavad prognoosi? Erista kinnitatud otsuseid kavatsustest. Koosta liinide lõikes kolm stsenaariumi (baas, pessimistlik, optimistlik) võttes arvesse võimalikke muutusi liinide lõikes ja summeeri need prognoosid kolmeks tervikprognoosiks. Põhjenda muutusi liinide lõikes. Lisa stsenaariumid exceli tabelina kataloogi. Hoia exceli tabelis valemeid ja tee liinide lõikes prognoosimuutused nii, et need oleks jälgitavad.  
+ </pre><button class="copy" type="button" data-target="p5" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">6. Eelarve täpsus</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> Excel Copilot (avatud Exceli failis) või Copilot Chat</p>
+<div class="prompt"><pre id="p6">Võrdle 2026. aasta eelarveprognoosi tegelikkusega jaanuar–oktoober. Kui suur on kõrvalekalle ja mis selle põhjustas? Mida peaks järgmises prognoosis teisiti tegema? Tee selgitav exceli tabel.</pre><button class="copy" type="button" data-target="p6" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">7. Juhatuse kokkuvõte</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> OneDrive&#x27;i Copilot (ainult failid, meile ei näe) - võib teha ka P5 tulemuse baasil Copilot Chatiga.</p>
+<div class="prompt"><pre id="p7">Koosta juhatusele üheleheküljeline kokkuvõte koos graafikuga: 2026 hinnang, 2027 stsenaariumid, peamised riskid ja otsused, mis on vaja teha.</pre><button class="copy" type="button" data-target="p7" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">Lisaülesanne: postkast</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> Copiloti agent (allikas: sinu OneDrive&#x27;i kaust + Outlook; veebiotsing välja)</p>
+<div class="prompt"><pre id="p8">Kas postkastis olevad [KOOLITUS] kirjad muudavad prognoosi eeldusi? Mis on kinnitatud ja mis mitte? Ära kasuta internetiotsinguid.</pre><button class="copy" type="button" data-target="p8" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h2>Kontrolli tulemust</h2>
+<ul>
+<li>Kas Copilot kasutas kõiki asjakohaseid faile? Palu tal loetleda allikad.</li>
+<li>Kas numbrid on arvutatud ja arvutuskäik on näha? Kontrolli vähemalt üks number ise üle.</li>
+<li>Kas vastuses on eristatud fakt (dokumendis kirjas) ja järeldus/oletus?</li>
+<li>Kas prognoosi baasiks kasutati perioodi, mida mõjutas erakorraline sündmus?</li>
+</ul>
+<p class="note">Salvesta oma tulemused (Word, Excel, md) samasse kausta oma OneDrive&#x27;is.</p>
+</article>
+<nav class="pager">
+<a href="index.html">← Kõik harjutused</a>
+<a href="harjutus-1.html">← Eelmine</a>
+<a href="harjutus-3.html">Järgmine →</a>
+</nav>
+</main>
+<footer class="site-footer"><div class="wrap">Koolituse näidismaterjal – fiktiivsed andmed ja isikud.</div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
