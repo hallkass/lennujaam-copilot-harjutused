@@ -3,54 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Harjutus 1: lepingud, arved ja laekumised</title>
+<title>Harjutus 1: Kliendi 360° vaade – Baltic Wings</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="site-header"><div class="wrap"><a class="brand" href="index.html">Copiloti praktilised harjutused</a></div></header>
 <main class="wrap">
 <p class="crumb"><a href="index.html">← Kõik harjutused</a></p>
-<h1>Harjutus 1: lepingud, arved ja laekumised</h1>
-<p class="meta">Kaust: Lepingute näidiskaust · sobib: lepingud, arveldus, võlgnevused</p>
+<h1>Harjutus 1: Kliendi 360° vaade – Baltic Wings</h1>
+<p class="meta">Kaust: Klient 360 näidiskaust - Baltic Wings · sobib: kliendi- ja partnerisuhted, lepingud, arveldus, liinid</p>
 <article class="guide">
 <h2>Taust</h2>
-<p>Oled kommertsteenuste arveldusspetsialist. Kaustas on rentnike, reklaamipartneri ja lennufirmade lepingud (sh lisalepingud), oktoobri 2026 müügiarved, aktid ja teatised üleantud ruumide, kaartide ja osutatud teenuste kohta ning raamatupidamise laekumiste väljavõte. Kõik andmed on fiktiivsed.</p>
+<p>Pead saama ühe kliendi kohta tervikpildi: mis on kokku lepitud, mis on pooleli, mis on vastuolus ja mis on järgmised sammud. Info on laiali: Teamsi transkriptsioonid (inglise ja eesti keeles), meililõimed, leping ja selle muudatuse eelnõu, arved, operatiivteenistuse teatis, saldo, CRM-i eksport, liiklusandmed ja pressiteade.</p>
 <h2>Ettevalmistus</h2>
 <ul>
-<li>Veendu, et kaust „Lepingute näidiskaust“ on kopeeritud SINU OneDrive&#x27;i.</li>
+<li>Veendu, et kaust „Klient 360 näidiskaust - Baltic Wings“ on kopeeritud SINU OneDrive&#x27;i.</li>
 </ul>
 <h2>Ülesanded</h2>
 <p class="note">Tee ülesanded soovitud järjekorras. Iga ülesande jaoks alusta uut vestlust. Kopeeri prompt hallist kastist ja kohanda vajadusel.</p>
-<h3 class="task">1. Lepingute ülevaade</h3>
+<h3 class="task">1. Koosolekust memo</h3>
 <p class="tool"><span class="tool-label">Töövahend:</span> OneDrive&#x27;i Copilot (ainult failid, meile ei näe)</p>
-<p>Tulemus: Exceli tabel.</p>
-<div class="prompt"><pre id="p1">Tee selle kausta lepingutest Exceli tabel: vastaspool, lepingu nr, kehtivus, tasud ja määrad, arveldussagedus, maksetähtaeg. Arvesta lisalepingutega ja märgi, milline lisaleping mida muudab.</pre><button class="copy" type="button" data-target="p1" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">2. Arved vs lepingud</h3>
+<div class="prompt"><pre id="p1">Tee 21.10 Teamsi transkriptsioonist eestikeelne memo: arutatud teemad, otsused, tegevused (vastutaja, tähtaeg). Erista kinnitatud otsuseid ja kliendi kavatsusi.</pre><button class="copy" type="button" data-target="p1" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">2. Järelkontroll</h3>
 <p class="tool"><span class="tool-label">Töövahend:</span> OneDrive&#x27;i Copilot (ainult failid, meile ei näe)</p>
-<div class="prompt"><pre id="p2">Võrdle oktoobri arveid lepingutega. Kas igal arvel on lepinguline alus? Kas hinnad, kogused, KM-määr ja tähtajad vastavad lepingule (sh lisalepingutele)? Esita tabelina: arve, leping, leid, mõju eurodes.</pre><button class="copy" type="button" data-target="p2" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">3. Tarned ja teatised – kas arve on esitatud?</h3>
+<div class="prompt"><pre id="p2">Võrdle 21.10 kokkulepitud tegevusi 04.11 sisekoosoleku ja kausta e-kirjadega. Koosta tabel: tegevus, vastutaja, tähtaeg, staatus, allikas. Too välja hilinenud tegevused ja vastuolud.</pre><button class="copy" type="button" data-target="p2" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">3. Kliendi 360° ülevaade</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> Copilot Chat  (allikas: sinu OneDrive&#x27;i kaust + Outlook; veebiotsing välja)</p>
+<p>Kasuta malli MALL_Kliendi_360_ulevaade.</p>
+<div class="prompt"><pre id="p3">Koosta kausta failide ja postkasti [KOOLITUS] kirjade põhjal Baltic Wingsi 360° ülevaade malli järgi. Iga fakti juurde lisa allikas (fail või kiri + kuupäev). Erista kinnitatud, kavatsus ja hinnang. Ära kasuta internetiotsinguid.</pre><button class="copy" type="button" data-target="p3" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">Võrdlus: OneDrive vs agent</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> OneDrive&#x27;i Copilot (ainult failid, meile ei näe) ja Copiloti Chat (allikas: sinu OneDrive&#x27;i kaust + Outlook; veebiotsing välja)</p>
+<p>Küsi sama küsimus mõlemalt ja võrdle allikaid.</p>
+<div class="prompt"><pre id="p4">Mis on Baltic Wingsiga lahtised teemad ja mis on viimase nädala jooksul muutunud? Kontrolli ka Outlooki postkasti.</pre><button class="copy" type="button" data-target="p4" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">4. Kirja mustand kliendile</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> Copiloti agent (allikas: sinu OneDrive&#x27;i kaust + Outlook; veebiotsing välja)</p>
+<p>Mustand – ära saada.</p>
+<div class="prompt"><pre id="p5">Koosta ingliskeelne vastus Anna Saarele arve 2026-1005 vaidluse ja jäätõrje arvete kohta. Lähtu operatiivteenistuse andmetest ja lepingust. Kontrolli ka Outlooki postkasti. Ära kasuta internetiotsingut. </pre><button class="copy" type="button" data-target="p5" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">5. Järgmise kontakti ettevalmistus</h3>
+<p class="tool"><span class="tool-label">Töövahend:</span> Copiloti agent (allikas: sinu OneDrive&#x27;i kaust + Outlook; veebiotsing välja)</p>
+<div class="prompt"><pre id="p6">Koosta jaanuari kohtumise päevakord ja taustamemo: mis on muutunud alates 21.10 (pressiteade, e-kirjad), millised küsimused peame küsima. Märgi kontrollimata info eraldi. Vaata ka outlooki. Ära kasuta internetti. </pre><button class="copy" type="button" data-target="p6" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">6. Lepinguversioonide võrdlus</h3>
 <p class="tool"><span class="tool-label">Töövahend:</span> OneDrive&#x27;i Copilot (ainult failid, meile ei näe)</p>
-<div class="prompt"><pre id="p3">Vaata läbi kõik aktid ja teatised. Kas iga üleantud asja või osutatud teenuse kohta on esitatud arve õige summaga? Millised arved oleks lepingute järgi pidanud oktoobris esitatama, kuid pole esitatud? Näita arvutuskäik.</pre><button class="copy" type="button" data-target="p3" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">4. Laekumised vs arved</h3>
-<p class="tool"><span class="tool-label">Töövahend:</span> OneDrive&#x27;i Copilot (ainult failid, meile ei näe) / Excel Copilot (avatud Exceli failis)</p>
-<div class="prompt"><pre id="p4">Võrdle laekumiste väljavõtet arvetega. Leia tasutud, osaliselt tasutud, valesti seotud ja tasumata arved ning tuvastamata laekumised. Kontrolli viitenumbrite õigsust (Eesti 7-3-1 meetod) ja maksetähtaegu.</pre><button class="copy" type="button" data-target="p4" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">5. Kokkuvõte ja kirjad</h3>
-<p class="tool"><span class="tool-label">Töövahend:</span> OneDrive&#x27;i Copilot (ainult failid, meile ei näe)</p>
-<p>Kirjad jäävad mustanditeks – ära saada neid päriselt.</p>
-<div class="prompt"><pre id="p5">Koosta juhtkonnale lühikokkuvõte: puuduvad ja valed arved kokku eurodes, valesti seotud maksed, võlad.</pre><button class="copy" type="button" data-target="p5" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<div class="prompt"><pre id="p6">Koosta e-kirja mustand SunCharter OÜ-le makse meeldetuletuseks ning Baltic Wingsile jäätõrje lisaarve kohta.</pre><button class="copy" type="button" data-target="p6" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">Lisaülesanne: failid + postkast</h3>
-<p class="tool"><span class="tool-label">Töövahend:</span> Copiloti agent (allikas: sinu OneDrive&#x27;i kaust + Outlook)</p>
-<div class="prompt"><pre id="p7">Mis on selle kausta lepingupartneritega uut postkastis olevate [KOOLITUS] kirjade põhjal? Seo iga kiri vastava lepingu, arve või laekumisega ja ütle, mida peame tegema. Ära tee veebipäringuid</pre><button class="copy" type="button" data-target="p7" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">Koondülesanne:</h3>
-<p class="tool"><span class="tool-label">Töövahend:</span> Copilot Chat (allikas: sinu OneDrive&#x27;i kaust + Outlook; veebiotsing välja)</p>
-<div class="prompt"><pre id="p8">Vaata lisatud kaustas olevad dokumendid ja minu outlooki e-mailid üle ja tee kokkuvõte, kas esineb vigaseid või põhjendamatud makseid, kas kõik maksed on korrektselt kajastatud, kas kõigi tehtud tööde eest on arved esitatud ja kas arved on õigeaegselt laekunud. Tee ülevaade exceli tabelina.</pre><button class="copy" type="button" data-target="p8" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<div class="prompt"><pre id="p7">Võrdle kehtivat lepingut LT-2023-008 ja Baltic Wingsi muudatuse eelnõu. Too tabelina välja kõik erinevused, nende mõju lennujaamale ja soovitus. Kas kaaskirja väide „mainly technical“ peab paika?</pre><button class="copy" type="button" data-target="p7" aria-label="Kopeeri prompt">Kopeeri</button></div>
 <h2>Kontrolli tulemust</h2>
 <ul>
 <li>Kas Copilot kasutas kõiki asjakohaseid faile? Palu tal loetleda allikad.</li>
 <li>Kas numbrid on arvutatud ja arvutuskäik on näha? Kontrolli vähemalt üks number ise üle.</li>
 <li>Kas vastuses on eristatud fakt (dokumendis kirjas) ja järeldus/oletus?</li>
-<li>Kas Copilot arvestas lisalepinguid või kasutas põhilepingu vana hinda?</li>
+<li>Kas agent uskus sisekoosolekul öeldut või kontrollis e-kirjadest?</li>
+<li>Kas kuulujutt on esitatud faktina?</li>
+<li>Kas OneDrive&#x27;i Copilot ja agent kasutasid erinevaid allikaid?</li>
 </ul>
 <p class="note">Salvesta oma tulemused (Word, Excel, md) samasse kausta oma OneDrive&#x27;is.</p>
 </article>
