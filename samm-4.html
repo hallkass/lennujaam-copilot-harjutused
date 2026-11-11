@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samm-sammult 4: koosolekute protokollimine stenogrammi ja taustamaterjalidega</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap"><a class="brand" href="index.html">Copiloti praktilised harjutused</a></div></header>
+<main class="wrap">
+<p class="crumb"><a href="index.html">← Kõik harjutused</a></p>
+<h1>Samm-sammult 4: koosolekute protokollimine stenogrammi ja taustamaterjalidega</h1>
+<p class="meta">Harjutus: Klient 360 näidiskaust - Baltic Wings · kodutöö: kaks oma koosolekut · sobib: kõigile</p>
+<article class="guide">
+<h2>Taust</h2>
+<p>Koosoleku stenogrammist koostatakse memo koos otsuste, vastutajate ja tähtaegadega. Copilot teeb parema kokkuvõtte, kui lisaks stenogrammile annad talle ka koosoleku aluseks olevad materjalid ja muu taustainfo (päevakord, eelmine memo, esitlus, leping, e-kirjad) – siis saab ta aru, millest räägiti.</p>
+<p>Järgmise koosoleku stenogrammi saab võrrelda eelmisel korral fikseeritud seisuga: kas tegeleti samade teemadega uuesti ja kas kontrolliti eelmisel korral kokkulepitu täitmist.</p>
+<p>Koolitusel harjuta näidisstenogrammidega. Kodutööna salvesta kaks oma koosolekut ja tee sama protseduur läbi.</p>
+<h2>Ettevalmistus</h2>
+<ul>
+<li>Harjutuseks: kaust „Klient 360 näidiskaust - Baltic Wings“ on kopeeritud SINU OneDrive&#x27;i. Seal on kaks stenogrammi: TRANSKRIPT_2026-10-21_Baltic_Wings_kohtumine.docx ja TRANSKRIPT_2026-11-04_sisekoosolek_Baltic_Wings.docx.</li>
+<li>Kodutööks: loo OneDrive&#x27;i kaust koosolekute sarja jaoks, nt „Koosolekud – &lt;teema&gt;“.</li>
+</ul>
+<h2>Sammud</h2>
+<p class="tool"><span class="tool-label">Töövahend:</span> Teams / Word (stenogramm) → OneDrive&#x27;i Copilot või Copilot Chat (memo ja võrdlus)</p>
+<h3 class="task">1. Hangi stenogramm</h3>
+<p>Teams: lülita koosolekul sisse salvestus ja transkriptsioon. Korraldaja saab pärast koosolekut transkriptsiooni alla laadida (Word või VTT fail). Copilot oskab Teamsi koosolekute transkriptsioone ka ise leida, kui sul on neile ligipääs.</p>
+<p>Word: Avaleht (Home) → Dikteeri (Dictate) → Transkribeeri (Transcribe). Saad salvestada otse või laadida üles helifaili, nt telefoniga salvestatud koosoleku (.mp3, .m4a, .wav, .mp4). Lõpuks vali „Lisa dokumenti“ (Add to document).</p>
+<p>Harjutuses kasuta näidisstenogrammi TRANSKRIPT_2026-10-21_Baltic_Wings_kohtumine.docx.</p>
+<h3 class="task">2. Kogu taustamaterjalid samasse kausta</h3>
+<p>Pane stenogrammi kõrvale koosoleku aluseks olevad materjalid: päevakord, eelmine memo, esitlus, leping, olulised e-kirjad.</p>
+<p>Harjutuses on need juba kaustas: leping, arved, saldo, meililõimed ja pressiteade.</p>
+<h3 class="task">3. Koosta memo</h3>
+<p>Ava OneDrive&#x27;is kaust ja käivita Copilot (või ava Copilot Chat ja lisa failid viidetena).</p>
+<div class="prompt"><pre id="p1">Koosta koosoleku stenogrammi TRANSKRIPT_2026-10-21_Baltic_Wings_kohtumine.docx põhjal eestikeelne memo. Kasuta kausta teisi faile taustainfona, et mõista, millest räägiti. Struktuur: osalejad; arutatud teemad; otsused; tegevused tabelina (tegevus, vastutaja, tähtaeg); lahtised küsimused. Erista otsust arutelust ja kavatsusest. Kui vastutaja või tähtaeg puudub, kirjuta „täpsustamata“. Salvesta memo Wordi failina nimega MEMO_2026-10-21.docx.</pre><button class="copy" type="button" data-target="p1" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">4. Kontrolli memo üle</h3>
+<p>Memo kinnitab inimene. Kontrolli nimesid, numbreid ja tähtaegu.</p>
+<div class="prompt"><pre id="p2">Millised tegevused on stenogrammis ebaselgelt omistatud või ilma tähtajata? Too välja koht stenogrammis.</pre><button class="copy" type="button" data-target="p2" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">5. Võrdle järgmise koosolekuga</h3>
+<p>Kui järgmise koosoleku stenogramm on kaustas (harjutuses TRANSKRIPT_2026-11-04_sisekoosolek_Baltic_Wings.docx), võrdle seda eelmise memoga.</p>
+<div class="prompt"><pre id="p3">Võrdle stenogrammi TRANSKRIPT_2026-11-04_sisekoosolek_Baltic_Wings.docx memoga MEMO_2026-10-21.docx. Koosta tabel: eelmisel korral kokkulepitud tegevus, vastutaja, tähtaeg, seis uue koosoleku järgi (tehtud / pooleli / arutamata). Too välja: millised teemad tulid uuesti arutusele, millised kokkulepped jäid kontrollimata ja millised uued tegevused lisandusid.</pre><button class="copy" type="button" data-target="p3" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">6. Koosta uue koosoleku memo</h3>
+<div class="prompt"><pre id="p4">Koosta uue koosoleku memo samas struktuuris nagu MEMO_2026-10-21.docx ja lisa jaotis „Eelmise koosoleku kokkulepete seis“. Salvesta nimega MEMO_2026-11-04.docx.</pre><button class="copy" type="button" data-target="p4" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">7. Kodutöö</h3>
+<p>Salvesta kaks järjestikust oma koosolekut (Teams või Word Transcribe), pane stenogrammid ja taustamaterjalid ühte kausta ning tee läbi sammud 2–6.</p>
+<h2>Kontrolli tulemust</h2>
+<ul>
+<li>Kas memos on otsused, vastutajad ja tähtajad eraldi välja toodud?</li>
+<li>Kas taustamaterjalid aitasid: kas Copilot kasutas õigeid termineid, nimesid ja numbreid?</li>
+<li>Kas võrdlus näitas, mis jäi eelmisest korrast kontrollimata?</li>
+</ul>
+</article>
+<nav class="pager">
+<a href="index.html">← Kõik harjutused</a>
+<a href="samm-3.html">← Eelmine</a>
+<a href="samm-5.html">Järgmine →</a>
+</nav>
+</main>
+<footer class="site-footer"><div class="wrap">Koolituse näidismaterjal – fiktiivsed andmed ja isikud.</div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

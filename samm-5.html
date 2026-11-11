@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Samm-sammult 5: lennufirma taustauuring ja uudiste seire</title>
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap"><a class="brand" href="index.html">Copiloti praktilised harjutused</a></div></header>
+<main class="wrap">
+<p class="crumb"><a href="index.html">← Kõik harjutused</a></p>
+<h1>Samm-sammult 5: lennufirma taustauuring ja uudiste seire</h1>
+<p class="meta">Andmed: avalik veeb (vali ise lennufirma) · sobib: liinide arendus, partnerisuhted, kohtumiste ettevalmistus</p>
+<article class="guide">
+<h2>Taust</h2>
+<p>Koostad valitud lennufirma kohta allikatega taustamemo ja seadistad regulaarse uudiste jälgimise. Selles harjutuses kasutad päris lennufirmat ja avalikku veebi – veebiotsing on SEES. Seetõttu tuleb allikaid alati kontrollida.</p>
+<p>Researcher on Copiloti uurimisagent, mis teeb mitmest allikast struktureeritud raporti. Ajastatud prompt käivitab sama päringu automaatselt valitud ajal.</p>
+<h2>Ettevalmistus</h2>
+<ul>
+<li>Vali lennufirma, mille kohta tahad taustamemo teha.</li>
+<li>Loo OneDrive&#x27;i kaust „Lennufirmade seire“ – sinna salvestad memo ja seire tulemused.</li>
+</ul>
+<h2>Sammud</h2>
+<p class="tool"><span class="tool-label">Töövahend:</span> Copilot Chat → Researcher → ajastatud prompt (Scheduled prompt)</p>
+<h3 class="task">1. Koosta Copilotiga Researcherile uuringuülesanne</h3>
+<p>Ava Copilot Chat ja kopeeri allolev prompt. Asenda [LENNUFIRMA].</p>
+<div class="prompt"><pre id="p1">Aita mul koostada Researcherile uuringuülesanne lennufirma [LENNUFIRMA] kohta. Eesmärk: taustamemo enne kohtumist Tallinna lennujaamaga. Teemad: lennuvõrgustik ja liinid Tallinnast, lennukipark, finantsseis, strateegia ja uued liinid, viimase 6 kuu olulised uudised, riskid. Nõuded: iga väite juures allikas ja kuupäev; erista ametlikku infot (lennufirma, regulaator) ja meediat; kontrollimata info märgi eraldi. Väljund: kuni 2-leheküljeline memo eesti keeles.</pre><button class="copy" type="button" data-target="p1" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">2. Käivita Researcher</h3>
+<p>Ava Copilotis vasakult Agents → Researcher. Kopeeri sinna sammu 1 tulemus. Vali allikateks veeb (ja vajadusel ka töö failid).</p>
+<p>Researcher võib esitada täpsustavaid küsimusi – vasta neile või palu tal jätkata. Raporti valmimine võib võtta mitu minutit.</p>
+<h3 class="task">3. Kontrolli ja salvesta memo</h3>
+<p>Ava vähemalt 2–3 allikat ja kontrolli, kas väide ja kuupäev klapivad. Salvesta memo Wordi failina kausta „Lennufirmade seire“, nimes kuupäev (nt Taustamemo_[LENNUFIRMA]_2026-11-11.docx).</p>
+<h3 class="task">4. Koosta seire prompt</h3>
+<p>Ava Copilot Chatis uus vestlus ja saada allolev prompt. Kontrolli, et vastus on selline, nagu soovid.</p>
+<div class="prompt"><pre id="p2">Otsi veebist viimase 7 päeva olulised uudised lennufirma [LENNUFIRMA] kohta: liinid ja sagedused, lennukipark, finantsid, juhtkond, streigid ja häired, Baltikumi ja Tallinna puudutavad teated. Iga uudise juurde: kuupäev, allikas (link), 1–2 lauset sisu ja võimalik mõju Tallinna lennujaamale. Ainult usaldusväärsed allikad. Kui olulisi uudiseid pole, kirjuta „Olulisi uudiseid ei ole“.</pre><button class="copy" type="button" data-target="p2" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">5. Ajasta prompt</h3>
+<p>Vii hiir oma prompti peale ja vali „Schedule this prompt“ / „Ajasta see prompt“. Vali aeg ja sagedus (nt iga esmaspäev kell 8:00) ning lülita sisse e-posti teavitus.</p>
+<p>Ajastatud prompte saad hallata Copiloti paremal üleval menüüst (…) → Scheduled prompts. Korraga saab olla kuni 10 ajastatud prompti.</p>
+<h3 class="task">6. Säilita tulemused</h3>
+<p>Kui tulemus saabub, kopeeri olulised uudised kausta „Lennufirmade seire“ faili Seire_[LENNUFIRMA].docx (uusim üleval, kuupäevaga). Kord kuus uuenda taustamemot.</p>
+<div class="prompt"><pre id="p3">Uuenda taustamemot Taustamemo_[LENNUFIRMA] faili Seire_[LENNUFIRMA] põhjal. Too eraldi välja, mis on muutunud võrreldes eelmise versiooniga.</pre><button class="copy" type="button" data-target="p3" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">7. Arutle</h3>
+<p>Mille poolest erineb Researcheri raport tavalisest Copilot Chati vastusest? Kuidas eristada kontrollitud fakti meediast ja kuulujutust? Mida teha, kui seire leiab midagi olulist?</p>
+<h2>Kontrolli tulemust</h2>
+<ul>
+<li>Kas memo igal väitel on allikas ja kuupäev?</li>
+<li>Kas kontrollisid vähemalt 2–3 allikat ise?</li>
+<li>Kas ajastatud prompt on seadistatud ja teavitus sisse lülitatud?</li>
+<li>Kas tulemused on salvestatud kausta kuupäevaga?</li>
+</ul>
+</article>
+<nav class="pager">
+<a href="index.html">← Kõik harjutused</a>
+<a href="samm-4.html">← Eelmine</a>
+</nav>
+</main>
+<footer class="site-footer"><div class="wrap">Koolituse näidismaterjal – fiktiivsed andmed ja isikud.</div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
