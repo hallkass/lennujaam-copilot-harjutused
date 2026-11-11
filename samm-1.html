@@ -11,74 +11,46 @@
 <main class="wrap">
 <p class="crumb"><a href="index.html">← Kõik harjutused</a></p>
 <h1>Samm-sammult 1: agendi loomine Agent Builderiga</h1>
-<p class="meta">Kaust: Klient 360 näidiskaust - Baltic Wings · sobib: kõigile, kes töötavad kliendi või projektiga</p>
+<p class="meta">Sobib: kõigile · andmed: sinu Outlook, kalender, Teams ja soovi korral lisatud dokumendid</p>
 <article class="guide">
 <h2>Taust</h2>
-<p>Lood endale isikliku agendi „Baltic Wings 360“, mis aitab hoida ühe kliendi tervikpilti: lepingud, arved ja saldo, vaidlused, liinid, läbirääkimised ja avatud tegevused. Agent Builderis saab agendi kõigepealt tavakeeles kirjeldada (Describe) – Copilot koostab sellest seadistuse – ning seejärel seda täpsustada (Configure).</p>
-<p>Agendi teadmusallikaks on sinu OneDrive&#x27;i kaust ja sinu Outlooki e-kirjad. Agendile saab lisada kuni 50 OneDrive&#x27;i faili.</p>
+<p>Teed agendi, mis koostab sinu valitud perioodi ülesannete ülevaate Outlooki e-kirjade, ülesannete (tasks), kalendri ning Teamsi koosolekute kokkuvõtete ja stenogrammide põhjal. Agendile võid lisada ka oma dokumente, kus on ülesandeid (näiteks stenogramme).</p>
+<p>Agent Builderis juhid ehitamist vasakul oleva abistava Copilotiga. Paremal on agendi seadistus. Põhinupud on üleval: Configure (seadistus), Preview (proovimine) ja Create (loomine).</p>
 <h2>Ettevalmistus</h2>
 <ul>
-<li>Kaust „Klient 360 näidiskaust - Baltic Wings“ on kopeeritud SINU OneDrive&#x27;i.</li>
-<li>Saada endale e-kirjad 1–6 ja 22–24 (kaust „3 E-kirjad postkasti“) vähemalt 5 minutit enne sammu 8 – postkasti indekseerimine võtab aega.</li>
-<li>Agent jääb isiklikuks – ära jaga seda teistega.</li>
+<li>Kui sinu postkastis on vähe ülesandeid, saada endale e-kirjad 1–6 (kaust „3 E-kirjad postkasti“).</li>
+<li>Soovi korral hoia käepärast mõni stenogramm, nt TRANSKRIPT_2026-10-21_Baltic_Wings_kohtumine.docx (kaust „Klient 360 näidiskaust - Baltic Wings“).</li>
 </ul>
 <h2>Sammud</h2>
-<p class="note">Tee sammud järjest. Menüünimed võivad Copiloti versiooniti veidi erineda – otsi sarnase nimega valikut.</p>
-<p class="tool"><span class="tool-label">Töövahend:</span> Microsoft 365 Copilot → Agent Builder (agendi loomine Copiloti abiga) → agendi kasutamine Copilot Chatis</p>
+<p class="tool"><span class="tool-label">Töövahend:</span> Microsoft 365 Copilot → Agent Builder</p>
 <h3 class="task">1. Ava Agent Builder</h3>
-<p>Ava Microsoft 365 Copilot (m365.cloud.microsoft) ja vali vasakult „Agendid“ → „Loo agent“ (Create agent). Avaneb Agent Builder, kus on kaks vaadet: „Kirjelda“ (Describe) ja „Seadista“ (Configure).</p>
-<h3 class="task">2. Kirjelda agent Copilotile (Describe)</h3>
-<p>Kopeeri allolev kirjeldus vestlusesse. Copilot koostab selle põhjal agendi nime, kirjelduse ja juhised.</p>
-<div class="prompt"><pre id="p1">Loo agent nimega „Baltic Wings 360“. Agent aitab lennujaama kommertsmeeskonnal hoida kliendi Baltic Wings AS tervikpilti: lepingud ja tingimused, arved ja saldo, vaidlused, liinid ja reisijad, läbirääkimised, kokkulepped ja avatud tegevused. Agent vastab eesti keeles, kasutab ainult lisatud OneDrive&#x27;i kausta ja minu Outlooki e-kirju, toob iga fakti juurde allika (fail või kiri + kuupäev) ning eristab kinnitatud fakti, kavatsust ja hinnangut. Vastuolud allikates toob ta eraldi välja. Summad eurodes ja käibemaksuta.</pre><button class="copy" type="button" data-target="p1" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">3. Vasta Copiloti täpsustavatele küsimustele</h3>
-<p>Copilot võib küsida, kes agenti kasutab ja milliseid küsimusi talle esitatakse. Vasta näiteks nii:</p>
-<div class="prompt"><pre id="p2">Kasutajad on kommertsmeeskonna liikmed. Tüüpilised küsimused: mis on kliendiga lahti, mis on viimase nädala jooksul muutunud, koosta kohtumise päevakord ja taustamemo, koosta kirja mustand kliendile, võrdle lepinguversioone. Agent ei saada kirju ise – ainult mustandid.</pre><button class="copy" type="button" data-target="p2" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">4. Kontrolli seadistust (Configure)</h3>
-<p>Ava vaade „Seadista“. Kontrolli nime (kuni 30 märki), kirjeldust ja juhiseid. Kui juhistest puudub mõni reegel, lisa allolev tekst juhiste lõppu.</p>
-<div class="prompt"><pre id="p3">Reeglid:
-- Vasta ainult lisatud kausta failide ja kasutaja Outlooki e-kirjade põhjal.
-- Iga fakti juures allikas: faili nimi või kirja teema ja kuupäev.
-- Kirja tekstis olev „Algne saatja“ ja „Algne kuupäev“ on kirja tegelikud andmed.
-- Erista: KINNITATUD / KAVATSUS / HINNANG.
-- Kontrollimata info (kuulujutt, uudis ilma kinnituseta) märgi eraldi.
-- Kui infot ei leia, ütle seda – ära oleta.</pre><button class="copy" type="button" data-target="p3" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">5. Lisa teadmusallikaks OneDrive&#x27;i kaust</h3>
-<p>Jaotises „Teadmised“ (Knowledge) vali „Sirvi“ (Browse) ja vali oma OneDrive&#x27;ist kaust „Klient 360 näidiskaust - Baltic Wings“. Teine võimalus: kopeeri kausta jagamislink ja kasuta „Sisesta URL“.</p>
-<p>Allika juures võib mõnda aega olla olek „Ettevalmistamisel“ (Preparing) – agent ei kasuta allikat enne, kui see on valmis. Vajadusel vajuta värskendusnuppu.</p>
-<h3 class="task">6. Lülita sisse e-kirjad, piira allikad, lülita veeb välja</h3>
-<p>Lisa teadmusallikaks oma e-kirjad (Outlook / Email), kui see valik on olemas.</p>
-<p>Lülita sisse „Kasuta ainult määratud allikaid“ (Only use specified sources).</p>
-<p>Lülita veebiotsing välja – näidisandmed on fiktiivsed ja veeb tooks sisse päris info, mis nendega ei klapi.</p>
-<h3 class="task">7. Lisa soovituslikud küsimused (Starter prompts)</h3>
-<p>Lisa agendile 3 soovituslikku küsimust, näiteks:</p>
-<div class="prompt"><pre id="p4">Mis on Baltic Wingsiga lahtised teemad? Too allikad.</pre><button class="copy" type="button" data-target="p4" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<div class="prompt"><pre id="p5">Mis on viimase nädala jooksul muutunud (failid ja e-kirjad)?</pre><button class="copy" type="button" data-target="p5" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<div class="prompt"><pre id="p6">Koosta järgmise kohtumise päevakord ja taustamemo.</pre><button class="copy" type="button" data-target="p6" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">8. Testi agenti testipaneelis</h3>
-<p>Agent Builderi paremas servas on testipaneel. Esita küsimus ja vaata, kas vastuses on viited nii failidele kui ka e-kirjadele.</p>
-<div class="prompt"><pre id="p7">Mis on Baltic Wingsiga lahtised teemad ja mis on viimase nädala jooksul muutunud? Too iga punkti juurde allikas.</pre><button class="copy" type="button" data-target="p7" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">9. Loo agent</h3>
-<p>Vajuta „Loo“ (Create). Jagamise valikus jäta agent ainult endale.</p>
-<h3 class="task">10. Kasuta agenti Copilot Chatis</h3>
-<p>Ava agent Copiloti vasakult paanilt ja esita järgmised küsimused eraldi vestlustes.</p>
-<div class="prompt"><pre id="p8">Koosta Baltic Wingsi 360° ülevaade kaustas oleva malli MALL_Kliendi_360_ulevaade järgi. Iga fakti juurde lisa allikas.</pre><button class="copy" type="button" data-target="p8" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<div class="prompt"><pre id="p9">Kas Baltic Wings sulgeb Tallinna–Oslo liini?</pre><button class="copy" type="button" data-target="p9" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<div class="prompt"><pre id="p10">Koosta ingliskeelne vastus Anna Saarele arve 2026-1005 vaidluse ja jäätõrje arvete kohta. Ainult mustand.</pre><button class="copy" type="button" data-target="p10" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">11. Täienda agenti</h3>
-<p>Püsiv taustainfo käib agendi juhistesse: ava agent muutmiseks (Edit) ja lisa juhistesse näiteks allolev tekst. Ühekordse täpsustuse võid anda ka otse vestluses.</p>
-<div class="prompt"><pre id="p11">Lennujaama kontaktisikud Baltic Wingsi teemadel: Kristiina Aas (liinid), Triin Sepp (arveldus ja lepingud), Jaan Org (kinnisvara), Mart Kuusk (kommertsdirektor).</pre><button class="copy" type="button" data-target="p11" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<div class="prompt"><pre id="p12">Arvesta, et kreeditarve 546 € on täna koostatud. Kuidas see muudab avatud tegevusi?</pre><button class="copy" type="button" data-target="p12" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">12. Võrdle OneDrive&#x27;i Copilotiga</h3>
-<p>Esita sama küsimus OneDrive&#x27;i Copilotile (kausta vestlus) ja võrdle vastuseid: millised allikad olid kummalgi, mis jäi puudu?</p>
-<div class="prompt"><pre id="p13">Mis on Baltic Wingsiga viimase nädala jooksul muutunud?</pre><button class="copy" type="button" data-target="p13" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<p>Ava Microsoft 365 Copilot ja vali „Create agent“ / „Loo agent“. Avaneb vaade „Build your own specialist agent“.</p>
+<h3 class="task">2. Kirjelda agent</h3>
+<p>Kopeeri allolev kirjeldus lahtrisse „Message Agent Builder“ ja saada.</p>
+<div class="prompt"><pre id="p1">Teeme Agent Builderiga agendi, mis teeb ülevaate kasutaja valitud perioodi ülesannetest Outlooki mailide, taskide ja kalendri ning Teamsi koosolekute kokkuvõtete ja stenogrammide baasilt. Kasutaja võib lisada ka ise agendile dokumente, kus on ülesandeid (näiteks stenogramme).</pre><button class="copy" type="button" data-target="p1" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">3. Vaata, mis valmis sai</h3>
+<p>Abistav Copilot koostab agendi mustandi. Vasakul näed kokkuvõtet, paremal vaates Configure agendi nime, kirjeldust ja juhiseid (Instructions). Agent Builder võib luua kohe ka skilli – see on näha jaotises Skills.</p>
+<h3 class="task">4. Kontrolli teadmusallikaid (Knowledge)</h3>
+<p>Keri vaates Configure jaotiseni Knowledge → Work content. Kontrolli, et Cloud files, Outlook ja Teams on sisse lülitatud.</p>
+<p>Web search lülita välja – ülevaade peab tulema sinu tööallikatest.</p>
+<p>Soovi korral lisa oma dokument: „Add knowledge“ või lohista fail kasti („or just drop files here“).</p>
+<h3 class="task">5. Proovi agenti (Preview)</h3>
+<p>Vali üleval Preview ja küsi:</p>
+<div class="prompt"><pre id="p2">Koosta mulle eelmise nädala ja käesoleva nädala ülesannete ülevaade: ülesanne, tähtaeg, kellelt/kust (allikas), staatus.</pre><button class="copy" type="button" data-target="p2" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">6. Paranda abistava Copilotiga</h3>
+<p>Kirjuta vasakul olevale abistavale Copilotile, mida muuta. Seejärel proovi uuesti vaates Preview.</p>
+<div class="prompt"><pre id="p3">Lisa juhistesse: kui kasutaja ei ütle perioodi, küsi seda. Grupeeri ülesanded tähtaja järgi (üle tähtaja, sel nädalal, hiljem) ja märgi iga ülesande juurde allikas.</pre><button class="copy" type="button" data-target="p3" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">7. Loo agent</h3>
+<p>Vajuta üleval paremal Create. Jäta agent ainult endale.</p>
+<h3 class="task">8. Kasuta agenti</h3>
+<p>Ava agent Copiloti vasakult paanilt ja küsi:</p>
+<div class="prompt"><pre id="p4">Mis on minu ülesanded perioodil 01.11–30.11? Too välja üle tähtaja olevad.</pre><button class="copy" type="button" data-target="p4" aria-label="Kopeeri prompt">Kopeeri</button></div>
 <h2>Kontrolli tulemust</h2>
 <ul>
-<li>Kas agent kasutas nii faile kui ka e-kirju? Kas allikad on vastuses näha?</li>
-<li>Kas agent eristas kinnitatud fakti, kavatsust ja kontrollimata infot (Oslo)?</li>
-<li>Kas agent leidis e-kirja, mille saatsid vähem kui 5 minutit tagasi? Kui ei, proovi mõne minuti pärast uuesti.</li>
-<li>Kas agendi juhistes on reeglid, mis kehtivad igas vestluses?</li>
+<li>Kas ülevaates on ülesanded nii e-kirjadest, kalendrist kui ka Teamsist?</li>
+<li>Kas iga ülesande juures on allikas?</li>
+<li>Kas agent küsis perioodi, kui seda ei andnud?</li>
 </ul>
-<p class="note">Salvesta oma tulemused samasse kausta oma OneDrive&#x27;is.</p>
 </article>
 <nav class="pager">
 <a href="index.html">← Kõik harjutused</a>

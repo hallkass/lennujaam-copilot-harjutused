@@ -3,63 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Samm-sammult 3: skilli loomine ja kasutamine</title>
+<title>Samm-sammult 3: skill lepingute, arvete ja laekumiste kontrolliks</title>
 <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 <header class="site-header"><div class="wrap"><a class="brand" href="index.html">Copiloti praktilised harjutused</a></div></header>
 <main class="wrap">
 <p class="crumb"><a href="index.html">← Kõik harjutused</a></p>
-<h1>Samm-sammult 3: skilli loomine ja kasutamine</h1>
-<p class="meta">Kaust: Kataloogi seisu harjutus · sobib: kõigile, kellel on korduv töövõte</p>
+<h1>Samm-sammult 3: skill lepingute, arvete ja laekumiste kontrolliks</h1>
+<p class="meta">Kaust: Lepingute näidiskaust · sobib: lepingud, arveldus, võlgnevused</p>
 <article class="guide">
 <h2>Taust</h2>
-<p>Skill on korduvkasutatav töökord (fail SKILL.md): nimi, kirjeldus (millal skill käivitub) ja sammud. Kui oled skilli loonud, ei pea sama juhist iga kord uuesti kirjutama – Copilot kasutab skilli nime või kirjelduse järgi.</p>
-<p>Selles harjutuses lood skilli „kataloogi-seis“, mis koostab kaustast kaks ajatempliga md-faili: failide seis ja projekti seis. Hiljem uuendab skill seisu ainult muutunud failide põhjal. Isiklikud skillid salvestatakse sinu OneDrive&#x27;i.</p>
+<p>Skill on korduvkasutatav töökord: kirjutad selle ühe korra ja edaspidi käivitad lühikese käsuga. Selles harjutuses teed skilli, mis võrdleb lepinguid, arveid, akte ja laekumisi – sama töö, mida tegid harjutuses 1 – ning kasutad seda OneDrive&#x27;i Copilotis Lepingute kausta peal.</p>
 <h2>Ettevalmistus</h2>
 <ul>
-<li>Loo oma OneDrive&#x27;i kaust „BW 360 – seis“ ja kopeeri sinna kausta ETAPP_1_algseis_2026-11-04 failid (mitte kausta ennast).</li>
-<li>Hoia käepärast fail SKILL_kataloogi-seis.md ja mallid MALL_SEIS_FAILID.md, MALL_SEIS_PROJEKT.md (kaust „Kataloogi seisu harjutus“).</li>
+<li>Kaust „Lepingute näidiskaust“ on kopeeritud SINU OneDrive&#x27;i.</li>
 </ul>
 <h2>Sammud</h2>
-<p class="note">Tee sammud järjest. Menüünimed võivad Copiloti versiooniti veidi erineda – otsi sarnase nimega valikut.</p>
-<p class="tool"><span class="tool-label">Töövahend:</span> Microsoft 365 Copilot (Chat ja OneDrive&#x27;i Copilot) → isiklik skill sinu OneDrive&#x27;is</p>
-<h3 class="task">1. Mõtle läbi, mida skill teeb</h3>
-<p>Hea skilli kirjeldus ütleb, MILLAL see käivitub ja MIDA see teeb. Loe läbi SKILL_kataloogi-seis.md: nimi, kirjeldus, sammud, reeglid.</p>
-<h3 class="task">2. Loo skill Copiloti abiga</h3>
-<p>Ava Copilot Chat, lisa viitena fail SKILL_kataloogi-seis.md ja kopeeri allolev prompt.</p>
-<div class="prompt"><pre id="p1">Loo minu jaoks isiklik skill nimega „kataloogi-seis“ lisatud faili SKILL_kataloogi-seis.md põhjal. Skill koostab kaustast kaks ajatempliga md-faili (_SEIS_FAILID_ ja _SEIS_PROJEKT_), uuendab neid hiljem ainult uute ja muudetud failide ning uute e-kirjade põhjal ega kirjuta vanu seise üle. Kasuta malle MALL_SEIS_FAILID.md ja MALL_SEIS_PROJEKT.md.</pre><button class="copy" type="button" data-target="p1" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<p class="tool"><span class="tool-label">Töövahend:</span> OneDrive&#x27;i Copilot (Lepingute näidiskaust)</p>
+<h3 class="task">1. Ava Copilot Lepingute kaustas</h3>
+<p>Ava OneDrive&#x27;is kaust „Lepingute näidiskaust“ ja käivita Copilot (Copiloti nupp).</p>
+<h3 class="task">2. Loo skill</h3>
+<p>Kopeeri allolev prompt Copilotile.</p>
+<div class="prompt"><pre id="p1">Loo minu jaoks skill nimega „lepingute-arvete-kontroll“. Skill kontrollib kaustas olevaid lepinguid, arveid, akte/teatisi ja laekumisi:
+1) loe lepingud koos lisalepingutega ja koosta tingimuste tabel;
+2) võrdle arveid lepingutega (alus, hind, kogus, KM, tähtaeg);
+3) kontrolli akte ja teatisi – kas iga üleantud asja või teenuse kohta on arve esitatud;
+4) võrdle laekumisi arvetega (summa, viitenumber, tähtaeg);
+5) esita leiud tabelina koos allika ja arvutuskäiguga ning lõpus lühikokkuvõte eurodes.</pre><button class="copy" type="button" data-target="p1" aria-label="Kopeeri prompt">Kopeeri</button></div>
 <h3 class="task">3. Kontrolli, kas skill tekkis</h3>
-<p>Ava OneDrive → Minu failid → Documents → Copilot → Agent Assets ja otsi kausta „kataloogi-seis“ ning selles faili SKILL.md. Mõnes versioonis näed skille ka Copiloti seadetes (nt „Halda skille“ / Manage skills).</p>
-<p>Ava SKILL.md ja kontrolli: kas faili alguses on nimi ja kirjeldus ning kas kausta nimi ja skilli nimi on samad?</p>
-<p>Uue skilli tuvastamine võib võtta mõne minuti.</p>
-<h3 class="task">4. Kasuta skilli – algseis</h3>
-<p>Ava OneDrive&#x27;is kaust „BW 360 – seis“ ja käivita Copilot selle kausta kontekstis.</p>
-<div class="prompt"><pre id="p2">/kataloogi-seis koosta selle kausta algseis</pre><button class="copy" type="button" data-target="p2" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">5. Kontrolli tulemust</h3>
-<p>Kaustas peab olema kaks uut md-faili ajatempliga nimes. Ava need ja vaata: kas kõik failid on nimekirjas, kas võtmefaktid on konkreetsed (nt kirjade arv lõimes, summad), kas projekti seisus on avatud tegevused ja vastuolud koos allikatega?</p>
-<h3 class="task">6. Muuda kausta sisu</h3>
-<p>Kopeeri kausta ETAPP_2_muudatused_2026-11-06 failid kausta „BW 360 – seis“ (asendavad samanimelised) ja kustuta fail DIRECTO_Saldo_Baltic_Wings_2026-11-04.xlsx.</p>
-<h3 class="task">7. Kasuta skilli – uuendus</h3>
-<div class="prompt"><pre id="p3">/kataloogi-seis uuenda seis ja ütle, mis on muutunud</pre><button class="copy" type="button" data-target="p3" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">8. Kas skill käivitub ka ilma käsuta?</h3>
-<p>Esita küsimus ilma skilli nimeta. Kui skilli kirjeldus on hea, peaks Copilot ise skilli kasutama.</p>
-<div class="prompt"><pre id="p4">Mis on kaustas „BW 360 – seis“ viimase seisu järel muutunud?</pre><button class="copy" type="button" data-target="p4" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">9. Paranda skilli</h3>
-<p>Lisa skillile üks reegel – kas Copiloti abiga või muutes SKILL.md faili otse.</p>
-<div class="prompt"><pre id="p5">Uuenda skilli „kataloogi-seis“: kaustas hoitakse alles ainult 3 viimast seisufailide paari, vanemad tõstetakse alamkausta „_arhiiv“. Lisa projekti seisu algusesse rida „Meilid kontrollitud kuni: &lt;aeg&gt; / EI kontrollitud“.</pre><button class="copy" type="button" data-target="p5" aria-label="Kopeeri prompt">Kopeeri</button></div>
-<h3 class="task">10. Testi uuesti ja arutle</h3>
-<p>Käivita skill uuesti ja kontrolli, kas uus reegel töötab. Arutle: mis vahe on skillil, agendi juhistel ja salvestatud promptil? Mis juhtub, kui kaks skilli kirjeldust kattuvad?</p>
-<div class="prompt"><pre id="p6">/kataloogi-seis uuenda seis</pre><button class="copy" type="button" data-target="p6" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<p>Ava OneDrive → Minu failid → Documents → Copilot → Agent Assets. Seal peab olema kaust „lepingute-arvete-kontroll“ ja selles fail SKILL.md. Ava see ja loe läbi. Uue skilli kasutuselevõtt võib võtta mõne minuti.</p>
+<h3 class="task">4. Kasuta skilli</h3>
+<p>Mine tagasi kausta „Lepingute näidiskaust“, ava Copilot ja käivita skill.</p>
+<div class="prompt"><pre id="p2">/lepingute-arvete-kontroll kontrolli oktoobri arveid ja laekumisi</pre><button class="copy" type="button" data-target="p2" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">5. Proovi ilma käsuta</h3>
+<p>Esita küsimus skilli nime kasutamata. Kas Copilot kasutab skilli ise?</p>
+<div class="prompt"><pre id="p3">Kontrolli, kas kõik oktoobri arved vastavad lepingutele ja kas midagi on arveldamata.</pre><button class="copy" type="button" data-target="p3" aria-label="Kopeeri prompt">Kopeeri</button></div>
+<h3 class="task">6. Täienda skilli</h3>
+<div class="prompt"><pre id="p4">Täienda skilli „lepingute-arvete-kontroll“: lisa lõppu e-kirja mustandid võlgnikele ja klientidele, kellele tuleb esitada puuduv või parandatud arve.</pre><button class="copy" type="button" data-target="p4" aria-label="Kopeeri prompt">Kopeeri</button></div>
 <h2>Kontrolli tulemust</h2>
 <ul>
-<li>Kas SKILL.md on õiges kohas ja kas nimi ühtib kausta nimega?</li>
-<li>Kas skill lõi failide ja projekti seisu eraldi failidena, ajatempel nimes?</li>
-<li>Kas uuendamisel loeti ainult uued ja muudetud failid? Küsi Copilotilt, mida ta luges.</li>
-<li>Kas vanu seise ei kirjutatud üle?</li>
-<li>Kas skill käivitus ka ilma /-käsuta?</li>
+<li>Kas skill leidis samad probleemid, mis harjutuses 1?</li>
+<li>Kas tabelites on allikas ja arvutuskäik?</li>
+<li>Kas teistkordne käivitus andis sama struktuuriga tulemuse?</li>
 </ul>
-<p class="note">Salvesta oma tulemused samasse kausta oma OneDrive&#x27;is.</p>
 </article>
 <nav class="pager">
 <a href="index.html">← Kõik harjutused</a>
