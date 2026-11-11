@@ -105,3 +105,6 @@ th { background: var(--accent-soft); }
   .prompt { padding: 46px 12px 12px; }
   .copy { top: 8px; right: 8px; }
 }
+
+.section { font-size: 1.45rem; margin: 40px 0 6px; }
+.card .num { align-self: flex-start; min-width: 34px; width: auto; padding: 0 9px; border-radius: 17px; }
